@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body>
+
+        <!-- Header de marca -->
+        <div th:fragment="header" class="cfs-header">
+            <div class="container d-flex align-items-center">
+                <span class="cfs-logo">CENTRO FITNESS SILES</span>
+            </div>
+        </div>
+
+        <!-- Navbar de navegacion -->
+        <nav th:fragment="navbar" class="navbar navbar-expand-md navbar-cfs">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="/" style="color: #034AA6;">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCFS">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navCFS">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/categorias">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/servicios">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reservas">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Footer -->
+        <footer th:fragment="footer" class="cfs-footer">
+            <div class="container d-flex justify-content-between flex-wrap">
+                <span>&copy; 2026 Centro Fitness Siles. Todos los derechos reservados.</span>
+                <span><a href="/contacto">Contactanos</a></span>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,97 @@
+
+:root {
+    --bs-primary: #034AA6;
+    --bs-primary-rgb: 3, 74, 166;
+    --bs-secondary: #2987D9;
+    --bs-secondary-rgb: 41, 135, 217;
+    --bs-light: #B4CED9;
+    --bs-warning: #F2BC1B;
+    --bs-warning-rgb: 242, 188, 27;
+
+    --color-neutro: #736D5C;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #2c2c2c;
+}
+
+/* Header de marca, distinto de la navbar */
+.cfs-header {
+    background-color: var(--bs-primary);
+    color: #ffffff;
+    padding: 0.75rem 0;
+}
+
+.cfs-header .cfs-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar-cfs {
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--bs-warning);
+}
+
+.navbar-cfs .nav-link {
+    color: var(--bs-primary);
+    font-weight: 500;
+}
+
+.navbar-cfs .nav-link:hover,
+.navbar-cfs .nav-link.active {
+    color: var(--bs-secondary);
+}
+
+/* Footer */
+.cfs-footer {
+    background-color: var(--color-neutro);
+    color: #f1f1f1;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.cfs-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Secciones con fondo suave */
+.seccion-clara {
+    background-color: var(--bs-light);
+}
+
+/* Tarjetas de servicio/clase, sin sombras de relleno */
+.card-cfs {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.card-cfs .card-header {
+    background-color: var(--bs-primary);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Botones de acento para acciones principales */
+.btn-acento {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
+.btn-acento:hover {
+    background-color: #d9a516;
+    border-color: #d9a516;
+    color: #2c2c2c;
+}
+
+/* Tablas de administracion (CRUD) */
+.table-cfs thead {
+    background-color: var(--bs-primary);
+    color: #ffffff;
+}
